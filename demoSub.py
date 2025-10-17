@@ -4,6 +4,7 @@ import time
 # --- Configuration ---
 BROKER_ADDRESS = "broker.hivemq.com"
 TOPIC = "char/counter_topic"
+SUB_TOPIC = "device/control/state"
 
 # --- Callback Functions ---
 def on_connect(client, userdata, flags, rc):

@@ -18,7 +18,7 @@ try:
         temperature = random.uniform(TEMP_MIN, TEMP_MAX)
         payload = f"{temperature:.2f}"
         client.publish(TOPIC, payload)
-        print(f"Published Temperature: {payload}°C")
+        print(f"Published Temperature: {payload}%")
         time.sleep(PUBLISH_INTERVAL)
 except KeyboardInterrupt:
     client.loop_stop()
